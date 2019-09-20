@@ -19,7 +19,6 @@ const TopnavEasyAccess = () => {
             <i className="iconsminds-optimization d-block" />{" "}
             RH Rápido
           </NavLink>
-
           <NavLink to="/app/ui" className="icon-menu-item">
             <i className="iconsminds-mail-settings d-block" />{" "}
             Webmail
@@ -28,9 +27,9 @@ const TopnavEasyAccess = () => {
             <i className="iconsminds-monitor-3 d-block" />{" "}
             Portal
           </NavLink>
-          <NavLink to="/app/applications/chat" className="icon-menu-item">
-            <i className="iconsminds-calendar-4 d-block" />{" "}
-            Aniversariantes
+          <NavLink to="/app/ui" className="icon-menu-item">
+            <i className="iconsminds-telephone-2 d-block" />{" "}
+            Ramais
           </NavLink>
           {/* <NavLink to="/app/applications/survey" className="icon-menu-item">
             <i className="iconsminds-formula d-block" />{" "}
