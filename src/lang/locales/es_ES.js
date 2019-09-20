@@ -23,7 +23,7 @@ module.exports = {
   "user.login-button": "INICIAR SESIÓN",
   "user.register-button": "REGISTRO",
   "user.reset-password-button": "REINICIAR",
-  "user.buy": "COMPRAR",
+  "user.portal": "COMPRAR",
   "user.username": "Nombre de Usuario",
 
   /* 03.Menú */

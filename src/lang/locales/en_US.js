@@ -11,7 +11,7 @@ Table of Contents
 
 module.exports = {
   /* 01.General */
-  "general.copyright": "Gogo React © 2018 All Rights Reserved.",
+  "general.copyright": "Educação Metodista © 2018 All Rights Reserved.",
 
   /* 02.User Login, Logout, Register */
   "user.login-title": "Login",
@@ -24,7 +24,7 @@ module.exports = {
   "user.login-button": "LOGIN",
   "user.register-button": "REGISTER",
   "user.reset-password-button": "RESET",
-  "user.buy": "BUY",
+  "user.portal": "BUY",
   "user.username": "Username",
 
   /* 03.Menu */
