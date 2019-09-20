@@ -7,11 +7,14 @@ import AppLayout from '../../layout/AppLayout';
 const Gogo = React.lazy(() =>
   import(/* webpackChunkName: "viwes-gogo" */ './intranet')
 );
-const SecondMenu = React.lazy(() =>
-  import(/* webpackChunkName: "viwes-second-menu" */ './second-menu')
+const Setores = React.lazy(() =>
+  import(/* webpackChunkName: "viwes-second-menu" */ './setores')
 );
 const BlankPage = React.lazy(() =>
   import(/* webpackChunkName: "viwes-blank-page" */ './blank-page')
+);
+const Aniversariantes = React.lazy(() =>
+  import(/* webpackChunkName: "viwes-blank-page" */ './aniversariantes')
 );
 
 class App extends Component {
@@ -29,12 +32,16 @@ class App extends Component {
                 render={props => <Gogo {...props} />}
               />
               <Route
-                path={`${match.url}/second-menu`}
-                render={props => <SecondMenu {...props} />}
+                path={`${match.url}/setores`}
+                render={props => <Setores {...props} />}
               />
               <Route
                 path={`${match.url}/blank-page`}
                 render={props => <BlankPage {...props} />}
+              />
+              <Route
+                path={`${match.url}/aniversariantes`}
+                render={props => <Aniversariantes {...props} />}
               />
               <Redirect to="/error" />
             </Switch>
