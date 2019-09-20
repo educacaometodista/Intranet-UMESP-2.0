@@ -1,7 +1,18 @@
+div .readMore-notifications {
+    font-size: 15px;
+    padding: 10px 0px 10px 0px;
+    margin: 5px 0px 5px 0px;
+    display: inline;
+}
+
 .readMore-notifications a {
     font-weight: bold;
     color: #145388;
     text-align: left;
+}
+
+.readMore-notifications a:hover {
+    color: #145388c2;
 }
 
 .readMore-notifications a::after {
@@ -27,4 +38,19 @@
 
 .navbar #iconMenuDropdown{
     height: 200px;
+}
+
+div .logoFooter img {
+    position: absolute;
+    right: 0px;
+    padding-right: 18px;
+    width: 60px;
+}
+
+.sidebar .sub-menu ul li span{
+    display: list-item !important;
+}
+
+.carouselView{
+    max-height: 300px;
 }
