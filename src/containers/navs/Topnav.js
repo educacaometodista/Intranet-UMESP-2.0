@@ -245,10 +245,10 @@ class TopNav extends Component {
           <div className="position-relative d-none d-none d-lg-inline-block">
             <a
               className="btn btn-outline-primary btn-sm ml-2"
-              target="_top"
-              href="https://themeforest.net/cart/configure_before_adding/22544383?license=regular&ref=ColoredStrategies&size=source"
+              target="_blank"
+              href="https://metodista.br"
             >
-              <IntlMessages id="user.buy" />
+              <IntlMessages id="user.portal" />
             </a>
           </div>
         </div>
