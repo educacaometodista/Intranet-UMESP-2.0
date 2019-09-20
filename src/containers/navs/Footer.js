@@ -1,15 +1,5 @@
 import React, { Component } from "react";
 
-import { NavLink } from "react-router-dom";
-import { connect } from "react-redux";
-
-
-import { MobileMenuIcon, MenuIcon } from "../../components/svg";
-import TopnavEasyAccess from "./Topnav.EasyAccess";
-import TopnavNotifications from "./Topnav.Notifications";
-
-import { getDirection, setDirection } from "../../helpers/Utils";
-
 class Footer extends Component {
   constructor(props) {
     super(props);
@@ -23,9 +13,13 @@ class Footer extends Component {
 
   render() {
     return (
-        <nav className="d-flex align-items-center footer fixed-bottom">
+        <nav className="d-flex footer fixed-bottom">
           <div className="d-flex pl-5 text-white align-items-left">
             Copyright &copy; <a href="https://github.com/educacaometodista" className="">Educação Metodista</a>
+          </div>
+
+          <div className="logoFooter align-items-right">
+            {/* <img src="http://portal.metodista.br/msg/institucional/comunicados-2018/imagens/educacao-metodista.png" /> */}
           </div>
         </nav>
     );
