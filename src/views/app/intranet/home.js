@@ -4,7 +4,7 @@ import IntlMessages from "../../../helpers/IntlMessages";
 import { Colxx, Separator } from "../../../components/common/CustomBootstrap";
 import Breadcrumb from "../../../containers/navs/Breadcrumb";
  
-export default class Start extends Component {
+export default class Home extends Component {
     render() {
         return (
             <Fragment>

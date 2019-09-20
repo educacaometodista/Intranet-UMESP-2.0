@@ -1,9 +1,9 @@
 const data = [
   {
     id: "gogo",
-    icon: "iconsminds-air-balloon-1",
+    icon: "iconsminds-newspaper",
     label: "Destaques",
-    to: "/app/intranet",
+    to: "/app/intranet/home",
     // subs: [
     //   {
     //     icon: "simple-icon-paper-plane",
@@ -14,7 +14,7 @@ const data = [
   },
   {
     id: "secondmenu",
-    icon: "iconsminds-three-arrow-fork",
+    icon: "iconsminds-business-man",
     label: "Setores",
     to: "/app/second-menu",
     subs: [
@@ -27,14 +27,14 @@ const data = [
   },
   {
     id: "blankpage",
-    icon: "iconsminds-bucket",
+    icon: "iconsminds-suitcase",
     label: "Serviços",
     to: "/app/blank-page"
   },
   {
     id: "blankpage",
-    icon: "iconsminds-bucket",
-    label: "Ramais",
+    icon: "iconsminds-calendar-4",
+    label: "Aniversariantes",
     to: "/"
   }
 ];

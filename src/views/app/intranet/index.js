@@ -1,19 +1,19 @@
 import React, { Suspense } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
-const Start = React.lazy(() =>
-  import(/* webpackChunkName: "start" */ './start')
+const Home = React.lazy(() =>
+  import(/* webpackChunkName: "start" */ './home')
 );
-const Gogo = ({ match }) => (
+const Intranet = ({ match }) => (
   <Suspense fallback={<div className="loading" />}>
     <Switch>
-      <Redirect exact from={`${match.url}/`} to={`${match.url}/start`} />
+      <Redirect exact from={`${match.url}/`} to={`${match.url}/home`} />
       <Route
-        path={`${match.url}/start`}
-        render={props => <Start {...props} />}
+        path={`${match.url}/home`}
+        render={props => <Home {...props} />}
       />
       <Redirect to="/error" />
     </Switch>
   </Suspense>
 );
-export default Gogo;
+export default Intranet;
