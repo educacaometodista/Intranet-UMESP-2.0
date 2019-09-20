@@ -47,7 +47,7 @@ const TopnavNotifications = () => {
               return <NotificationItem key={index} {...notification} />;
             })}
           </PerfectScrollbar>
-          <div className="mb-3 pb-3 readMore-notifications">
+          <div className="readMore-notifications">
             <a href="verMaisComunicados">
               Ver mais comunicados
             </a>
