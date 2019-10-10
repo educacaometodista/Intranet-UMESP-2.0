@@ -12,7 +12,7 @@ Table of Contents
 module.exports = {
     /* 01.General */
     "general.copyright": "Educação Metodista © 2019 Todos direitos Reservados.",
-  
+
     /* 02.User Login, Logout, Register */
     "user.login-title": "Login",
     "user.register": "Register",
@@ -26,7 +26,7 @@ module.exports = {
     "user.reset-password-button": "RESET",
     "user.portal": "Acessar o Portal",
     "user.username": "Username",
-  
+
     /* 03.Menu */
     "menu.app": "Home",
     "menu.dashboards": "Dashboards",
@@ -39,13 +39,15 @@ module.exports = {
     "menu.chat": "Chat",
     "menu.survey": "Survey",
     "menu.todo": "Todo",
-    "menu.search" :"Pesquisar",
+    "menu.search": "Pesquisar",
     "menu.docs": "Docs",
     "menu.blank-page": "Blank Page",
-  
-   /* 04.Error Page */
-   "pages.error-title": "Ooops... looks like an error occurred!",
-   "pages.error-code": "Error code",
-   "pages.go-back-home": "GO BACK HOME",
-  };
-  
+
+    /* 04. Internal ages */
+    "menu.ramais": "Lista de Ramais",
+
+    /* 05.Error Page */
+    "pages.error-title": "Ooops... looks like an error occurred!",
+    "pages.error-code": "Error code",
+    "pages.go-back-home": "GO BACK HOME",
+};
