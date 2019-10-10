@@ -27,7 +27,7 @@ const TopnavEasyAccess = () => {
             <i className="iconsminds-monitor-3 d-block" />{" "}
             Portal
           </NavLink>
-          <NavLink to="/app/ui" className="icon-menu-item">
+          <NavLink to="/app/ramais" className="icon-menu-item">
             <i className="iconsminds-telephone-2 d-block" />{" "}
             Ramais
           </NavLink>
