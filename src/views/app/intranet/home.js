@@ -85,58 +85,45 @@ export default class Home extends Component {
           <Colxx xxs="12" className="mb-4">
             <HomeNews
               src={loremimg}
-              title={'Lorem ipsum dolor sit amet'}
-              description={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
+              title={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
+            />            
+            <HomeNews
+              src={loremimg}
+              title={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
+            />            
+            <HomeNews
+              src={loremimg}
+              title={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
             />            
             <HomeNews
               src={loremimg}
               title={'Lorem ipsum dolor sit amet'}
-              description={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
             />            
             <HomeNews
               src={loremimg}
               title={'Lorem ipsum dolor sit amet'}
-              description={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
             />            
             <HomeNews
               src={loremimg}
               title={'Lorem ipsum dolor sit amet'}
-              description={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
             />            
             <HomeNews
               src={loremimg}
               title={'Lorem ipsum dolor sit amet'}
-              description={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
             />            
             <HomeNews
               src={loremimg}
               title={'Lorem ipsum dolor sit amet'}
-              description={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
             />            
             <HomeNews
               src={loremimg}
               title={'Lorem ipsum dolor sit amet'}
-              description={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
             />            
             <HomeNews
               src={loremimg}
               title={'Lorem ipsum dolor sit amet'}
-              description={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
-            />            
-            <HomeNews
-              src={loremimg}
-              title={'Lorem ipsum dolor sit amet'}
-              description={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
-            />            
-            <HomeNews
-              src={loremimg}
-              title={'Lorem ipsum dolor sit amet'}
-              description={'Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet'}
             />
 
-            <section>
-              
-            </section>
    
           </Colxx>
         </Row>
