@@ -16,6 +16,9 @@ const BlankPage = React.lazy(() =>
 const Aniversariantes = React.lazy(() =>
   import(/* webpackChunkName: "viwes-blank-page" */ './aniversariantes')
 );
+const Ramais = React.lazy(() =>
+  import(/* webpackChunkName: "viwes-blank-page" */ './ramais')
+);
 
 class App extends Component {
   render() {
@@ -38,6 +41,10 @@ class App extends Component {
               <Route
                 path={`${match.url}/blank-page`}
                 render={props => <BlankPage {...props} />}
+              />
+              <Route
+                path={`${match.url}/ramais`}
+                render={props => <Ramais {...props} />}
               />
               <Route
                 path={`${match.url}/aniversariantes`}
