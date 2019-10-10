@@ -111,6 +111,6 @@ const data = [
     icon: "iconsminds-calendar-4",
     label: "Aniversariantes",
     to: "/app/aniversariantes"
-  }
+  },
 ];
 export default data;
