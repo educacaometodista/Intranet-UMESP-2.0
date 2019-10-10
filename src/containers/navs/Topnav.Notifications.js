@@ -48,7 +48,7 @@ const TopnavNotifications = () => {
             })}
           </PerfectScrollbar>
           <div className="readMore-notifications">
-            <a href="verMaisComunicados">
+            <a href="comunicados">
               Ver mais comunicados
             </a>
           </div>
