@@ -12,9 +12,6 @@ export default function HomeNews(props) {
       <p className="homeNewsTitle">
         {props.title}
       </p>
-      <p className="homeNewsDescription">
-        {props.description}
-      </p>
     </div>
 
   )
