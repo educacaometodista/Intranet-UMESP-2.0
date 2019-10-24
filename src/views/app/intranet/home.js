@@ -12,6 +12,8 @@ import {
 } from "mdbreact";
 // Hero Carousel: https://mdbootstrap.com/docs/react/advanced/carousel
 
+import MaterialIcon from 'material-icons-react';
+
 import ScrollMenu from "react-horizontal-scrolling-menu";
 import PropTypes from "prop-types";
 
@@ -25,43 +27,45 @@ const loremimg =
   "https://image.shutterstock.com/image-photo/popular-photographers-attraction-braies-lake-600w-705417145.jpg";
 
 const list = [
-  { name: "item1" },
-  { name: "item2______________" },
-  { name: "item3" },
-  { name: "item4" },
-  { name: "item5" },
-  { name: "item6" },
-  { name: "item7______________" },
-  { name: "item8" },
-  { name: "item9" },
-  { name: "item10" },
-  { name: "item11" },
-  { name: "item12" },
-  { name: "item13" },
-  { name: "item14______________" },
-  { name: "item15" },
-  { name: "item16" },
-  { name: "item17" },
-  { name: "item18" },
-  { name: "item19" },
-  { name: "item20" },
-  { name: "item21" },
-  { name: "item22______________" },
-  { name: "item23" },
-  { name: "item24" },
-  { name: "item25" }
+  { name: "item1", age: 12 },
+  { name: "item2", age: 12 },
+  { name: "item3", age: 12 },
+  { name: "item4", age: 12 },
+  { name: "item5", age: 12 },
+  { name: "item6", age: 12 },
+  { name: "item7", age: 12 },
+  { name: "item8", age: 12 },
+  { name: "item9", age: 12 },
+  { name: "item10", age: 12 },
+  { name: "item11", age: 12 },
+  { name: "item12", age: 12 },
+  { name: "item13", age: 12 },
+  { name: "item14", age: 12 },
+  { name: "item15", age: 12 },
+  { name: "item16", age: 12 },
+  { name: "item17", age: 12 },
+  { name: "item18", age: 12 },
+  { name: "item19", age: 12 },
+  { name: "item20", age: 12 },
+  { name: "item21", age: 12 },
+  { name: "item22", age: 12 },
+  { name: "item23", age: 12 },
+  { name: "item24", age: 12 },
+  { name: "item25", age: 12 }
 ];
 
 const MenuItem = ({ text, selected }) => {
-  return <div className={`menu-item ${selected ? "active" : ""}`}>{text}</div>;
+  return (
+    <div className={`menu-item ${selected ? "active" : ""}`}>{text}</div>
+  );
 };
 
 export const Menu = (list, selected) =>
   list.map(el => {
-    const { name } = el;
+    const { name, age } = el;
     const onClick = () => console.log("original onClick ", name);
     return (
-      <MenuItem text={name} key={name} selected={selected} onClick={onClick} />
+      <MenuItem text={`${name} idade ${age}`} key={name} selected={selected} onClick={onClick} />
     );
   });
 
@@ -73,8 +77,8 @@ Arrow.propTypes = {
   className: PropTypes.string
 };
 
-export const ArrowLeft = Arrow({ text: "<", className: "arrow-prev" });
-export const ArrowRight = Arrow({ text: ">", className: "arrow-next" });
+export const ArrowLeft = Arrow({ text: "❰", className: "arrow-prev" });
+export const ArrowRight = Arrow({ text: "❯", className: "arrow-next" });
 
 export default class Home extends Component {
   state = {
