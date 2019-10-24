@@ -44,10 +44,10 @@ p.homeNewsTitle {
   border: none;
 }
 .menu-item-wrapper.active {
-  border: 1px blue solid;
+  box-shadow: 2px 0px 20px black;
 }
 .menu-item.active {
-  border: 1px green solid;
+  /* border: 1px green solid; */
 }
 
 .scroll-menu-arrow {
