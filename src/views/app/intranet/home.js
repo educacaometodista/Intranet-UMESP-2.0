@@ -24,7 +24,7 @@ import "./home.css";
 ////////////////////////////////////// END OF IMPORTS //////////////////////////////////////
 
 const loremimg =
-  "https://image.shutterstock.com/image-photo/popular-photographers-attraction-braies-lake-600w-705417145.jpg";
+  "http://placehold.it/600x415";
 
 const list = [
   { name: "item1", age: 12 },
@@ -191,7 +191,7 @@ export default class Home extends Component {
                 <MDBView className="carouselView">
                   <img
                     className="d-block w-100"
-                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                    src="http://placehold.it/1320x580"
                     alt="First slide"
                   />
                   <MDBMask overlay="black-light" />
@@ -205,7 +205,7 @@ export default class Home extends Component {
                 <MDBView className="carouselView">
                   <img
                     className="d-block w-100"
-                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                    src="http://placehold.it/1320x580"
                     alt="Second slide"
                   />
                   <MDBMask overlay="black-strong" />
@@ -219,7 +219,7 @@ export default class Home extends Component {
                 <MDBView className="carouselView">
                   <img
                     className="d-block w-100"
-                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                    src="http://placehold.it/1320x580"
                     alt="Third slide"
                   />
                   <MDBMask overlay="black-slight" />
