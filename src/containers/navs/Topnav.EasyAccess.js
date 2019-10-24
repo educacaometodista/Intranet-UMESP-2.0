@@ -1,6 +1,6 @@
 import React from "react";
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu } from "reactstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink,  } from "react-router-dom";
 import IntlMessages from "../../helpers/IntlMessages";
 
 const TopnavEasyAccess = () => {
@@ -15,14 +15,14 @@ const TopnavEasyAccess = () => {
           right
           id="iconMenuDropdown"
         >
-          <NavLink to="/app/dashboards/default" className="icon-menu-item">
+          <a href="http://www.metodista.br/webmetodista/index.html" className="icon-menu-item">
             <i className="iconsminds-optimization d-block" />{" "}
             RH Rápido
-          </NavLink>
-          <NavLink to="/app/ui" className="icon-menu-item">
+          </a>
+          <a href="http://webmail.metodista.br" className="icon-menu-item">
             <i className="iconsminds-mail-settings d-block" />{" "}
             Webmail
-          </NavLink>
+          </a>
           <NavLink to="/app/ui/charts" className="icon-menu-item">
             <i className="iconsminds-monitor-3 d-block" />{" "}
             Portal
@@ -31,14 +31,6 @@ const TopnavEasyAccess = () => {
             <i className="iconsminds-telephone-2 d-block" />{" "}
             Ramais
           </NavLink>
-          {/* <NavLink to="/app/applications/survey" className="icon-menu-item">
-            <i className="iconsminds-formula d-block" />{" "}
-            Aniversariantes
-          </NavLink>
-          <NavLink to="/app/applications/todo" className="icon-menu-item">
-            <i className="iconsminds-check d-block" />{" "}
-            LoremIpsum
-          </NavLink> */}
         </DropdownMenu>
       </UncontrolledDropdown>
     </div>
