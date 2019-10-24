@@ -10,8 +10,8 @@ const Gogo = React.lazy(() =>
 const Setores = React.lazy(() =>
   import(/* webpackChunkName: "viwes-second-menu" */ './setores')
 );
-const BlankPage = React.lazy(() =>
-  import(/* webpackChunkName: "viwes-blank-page" */ './blank-page')
+const Servicos = React.lazy(() =>
+  import(/* webpackChunkName: "viwes-blank-page" */ './servicos')
 );
 const Aniversariantes = React.lazy(() =>
   import(/* webpackChunkName: "viwes-blank-page" */ './aniversariantes')
@@ -39,8 +39,8 @@ class App extends Component {
                 render={props => <Setores {...props} />}
               />
               <Route
-                path={`${match.url}/blank-page`}
-                render={props => <BlankPage {...props} />}
+                path={`${match.url}/servicos`}
+                render={props => <Servicos {...props} />}
               />
               <Route
                 path={`${match.url}/ramais`}
