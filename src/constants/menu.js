@@ -9,7 +9,7 @@ const data = [
     //     icon: "simple-icon-paper-plane",
     //     label: "menu.start",
     //     to: "/app/intranet/start"
-    //   }     
+    //   }
     // ]
   },
   {
@@ -104,7 +104,7 @@ const data = [
     id: "servicos",
     icon: "iconsminds-suitcase",
     label: "Serviços",
-    to: "/app/blank-page"
+    to: "/app/servicos"
   },
   {
     id: "aniversariantes",
