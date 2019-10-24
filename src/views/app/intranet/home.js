@@ -27,31 +27,13 @@ const loremimg =
   "http://placehold.it/600x415";
 
 const list = [
-  { name: "item1", age: 12 },
-  { name: "item2", age: 12 },
-  { name: "item3", age: 12 },
-  { name: "item4", age: 12 },
-  { name: "item5", age: 12 },
-  { name: "item6", age: 12 },
-  { name: "item7", age: 12 },
-  { name: "item8", age: 12 },
-  { name: "item9", age: 12 },
-  { name: "item10", age: 12 },
-  { name: "item11", age: 12 },
-  { name: "item12", age: 12 },
-  { name: "item13", age: 12 },
-  { name: "item14", age: 12 },
-  { name: "item15", age: 12 },
-  { name: "item16", age: 12 },
-  { name: "item17", age: 12 },
-  { name: "item18", age: 12 },
-  { name: "item19", age: 12 },
-  { name: "item20", age: 12 },
-  { name: "item21", age: 12 },
-  { name: "item22", age: 12 },
-  { name: "item23", age: 12 },
-  { name: "item24", age: 12 },
-  { name: "item25", age: 12 }
+  { name: "Leonardo", dia: 15, mes: 2 },
+  { name: "Thiago", dia: 15, mes: 2 },
+  { name: "Fernando", dia: 15, mes: 2 },
+  { name: "Erick", dia: 15, mes: 2 },
+  { name: "Lucas", dia: 15, mes: 2 },
+  { name: "Lucca", dia: 15, mes: 2 },
+  { name: "Felipe", dia: 15, mes: 2 }
 ];
 
 const MenuItem = ({ text, selected }) => {
@@ -62,10 +44,10 @@ const MenuItem = ({ text, selected }) => {
 
 export const Menu = (list, selected) =>
   list.map(el => {
-    const { name, age } = el;
+    const { name, dia, mes } = el;
     const onClick = () => console.log("original onClick ", name);
     return (
-      <MenuItem text={`${name} idade ${age}`} key={name} selected={selected} onClick={onClick} />
+      <MenuItem text={`${name} | ${dia}/${mes}`} key={name} selected={selected} onClick={onClick} />
     );
   });
 
@@ -82,7 +64,7 @@ export const ArrowRight = Arrow({ text: "❯", className: "arrow-next" });
 
 export default class Home extends Component {
   state = {
-    alignCenter: true,
+    alignCenter: false,
     clickWhenDrag: false,
     dragging: true,
     hideArrows: true,
@@ -92,7 +74,7 @@ export default class Home extends Component {
     scrollToSelected: false,
     translate: undefined,
     transition: 0.4,
-    wheel: true,
+    wheel: false,
     showList: true,
     inertiascrolling: false,
     slowdownFactor: 0.25
@@ -115,10 +97,9 @@ export default class Home extends Component {
   }
 
   onUpdate = ({ translate }) => {
-    console.log(
-      // `onUpdate: translate: ${translate} firstItemVisible: ${firstItemVisible}, lastItemVisible: ${lastItemVisible}`
-      `onUpdate: translate: ${translate}`
-    );
+    // console.log(
+    //   `onUpdate: translate: ${translate}`
+    // );
     this.setState({ translate });
   };
 
@@ -300,143 +281,6 @@ export default class Home extends Component {
                 rtl={false}
               />
             )}
-
-            {/* <form className="properties">
-              <label style={checkboxStyle}>
-                Align center
-                <input
-                  name="alignCenter"
-                  type="checkbox"
-                  checked={alignCenter}
-                  onChange={() => this.setState({ alignCenter: !alignCenter })}
-                />
-              </label>
-              <label style={checkboxStyle}>
-                Dragging
-                <input
-                  name="dragging"
-                  type="checkbox"
-                  checked={dragging}
-                  onChange={() => this.setState({ dragging: !dragging })}
-                />
-              </label>
-              <label style={checkboxStyle}>
-                Click when drag end
-                <input
-                  name="clickWhenDrag"
-                  type="checkbox"
-                  checked={clickWhenDrag}
-                  onChange={() =>
-                    this.setState({ clickWhenDrag: !clickWhenDrag })
-                  }
-                />
-              </label>
-              <label style={checkboxStyle}>
-                Scroll to selected item
-                <input
-                  name="scrollToSelected"
-                  type="checkbox"
-                  checked={scrollToSelected}
-                  onChange={() =>
-                    this.setState({ scrollToSelected: !scrollToSelected })
-                  }
-                />
-              </label>
-              <label style={checkboxStyle}>
-                Use mouse wheel
-                <input
-                  name="wheel"
-                  type="checkbox"
-                  checked={wheel}
-                  onChange={() => this.setState({ wheel: !wheel })}
-                />
-              </label>
-              <label style={checkboxStyle}>
-                Hide arrows if items width less than menu width
-                <input
-                  name="hideArrows"
-                  type="checkbox"
-                  checked={hideArrows}
-                  onChange={() => this.setState({ hideArrows: !hideArrows })}
-                />
-              </label>
-              <label style={checkboxStyle}>
-                Hide left/right arrows if first/last item visible
-                <input
-                  name="hideSingleArrow"
-                  type="checkbox"
-                  checked={hideSingleArrow}
-                  onChange={() =>
-                    this.setState({ hideSingleArrow: !hideSingleArrow })
-                  }
-                />
-              </label>
-              <br />
-              <div style={valueStyle}>
-                Translate: {(translate || 0).toFixed(2)}
-              </div>
-              <label style={valueStyle}>
-                Selected:
-                <input
-                  style={{ margin: "0 5px" }}
-                  name="selected"
-                  type="text"
-                  value={selected}
-                  onChange={this.setSelected}
-                />
-              </label>
-              <label style={valueStyle}>
-                Transition duration:
-                <input
-                  style={{ margin: "0 5px" }}
-                  name="transition"
-                  type="number"
-                  value={transition || 0}
-                  min={0}
-                  max={10}
-                  onChange={ev =>
-                    this.setState({
-                      transition: !isNaN(+ev.target.value)
-                        ? +ev.target.value
-                        : 0
-                    })
-                  }
-                />
-              </label>
-              <label style={valueStyle}>
-                Items count:
-                <input
-                  style={{ margin: "0 5px" }}
-                  name="itemsCount"
-                  type="number"
-                  value={itemsCount}
-                  min={0}
-                  max={list.length}
-                  onChange={this.setItemsCount}
-                />
-              </label>
-              <label style={checkboxStyle}>
-                Inertia Scrolling
-                <input
-                  name="inertiascrolling"
-                  type="checkbox"
-                  checked={inertiascrolling}
-                  onChange={() =>
-                    this.setState({ inertiascrolling: !inertiascrolling })
-                  }
-                />
-              </label>
-              <label style={valueStyle}>
-                Inertia scrolling slowdown:
-                <input
-                  style={{ margin: "0 5px" }}
-                  name="slowdownFactor"
-                  type="number"
-                  value={slowdownFactor}
-                  onChange={this.setSlowdownFactor}
-                />
-              </label>
-            </form> */}
           </Colxx>
         </Row>
       </Fragment>
