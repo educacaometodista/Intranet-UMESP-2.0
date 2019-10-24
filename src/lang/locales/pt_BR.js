@@ -41,7 +41,7 @@ module.exports = {
     "menu.todo": "Todo",
     "menu.search": "Pesquisar",
     "menu.docs": "Docs",
-    "menu.blank-page": "Blank Page",
+    "menu.servicos": "Serviços",
 
     /* 04. Internal ages */
     "menu.ramais": "Lista de Ramais",
