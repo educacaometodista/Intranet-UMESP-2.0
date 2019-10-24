@@ -8,6 +8,7 @@ export default function HomeNews(props) {
       <img
         src={props.src}
         className="homeNewsImage"
+        alt="Teste"
       />
       <p className="homeNewsTitle">
         {props.title}

@@ -3,7 +3,6 @@ import { injectIntl } from "react-intl";
 import {
   UncontrolledDropdown,
   DropdownItem,
-  DropdownToggle,
   DropdownMenu,
   Input
 } from "reactstrap";
@@ -22,13 +21,11 @@ import {
   menuHiddenBreakpoint,
   searchPath,
   localeOptions,
-  isDarkSwitchActive,
 } from "../../constants/defaultValues";
 
 import { MobileMenuIcon, MenuIcon } from "../../components/svg";
 import TopnavEasyAccess from "./Topnav.EasyAccess";
 import TopnavNotifications from "./Topnav.Notifications";
-import TopnavDarkSwitch from "./Topnav.DarkSwitch";
 
 import { getDirection, setDirection } from "../../helpers/Utils";
 
@@ -187,7 +184,7 @@ class TopNav extends Component {
   };
 
   render() {
-    const { containerClassnames, menuClickCount, locale } = this.props;
+    const { containerClassnames, menuClickCount } = this.props;
     const { messages } = this.props.intl;
     return (
       <nav className="navbar fixed-top">
@@ -246,6 +243,7 @@ class TopNav extends Component {
             <a
               className="btn btn-outline-primary btn-sm ml-2"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://metodista.br"
             >
               <IntlMessages id="user.portal" />

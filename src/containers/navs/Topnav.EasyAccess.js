@@ -1,7 +1,6 @@
 import React from "react";
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu } from "reactstrap";
-import { NavLink,  } from "react-router-dom";
-import IntlMessages from "../../helpers/IntlMessages";
+import { NavLink } from "react-router-dom";
 
 const TopnavEasyAccess = () => {
   return (

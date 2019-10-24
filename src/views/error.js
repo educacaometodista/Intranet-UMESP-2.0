@@ -2,7 +2,6 @@ import React, { Component, Fragment } from "react";
 import { Row, Card, CardTitle,Button } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import { Colxx } from "../components/common/CustomBootstrap";
-import IntlMessages from "../helpers/IntlMessages";
 
 
 class Error extends Component {

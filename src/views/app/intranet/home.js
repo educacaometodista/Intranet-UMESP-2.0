@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Row } from "reactstrap";
-import { Colxx, Separator } from "../../../components/common/CustomBootstrap";
-import GlideComponentThumbs from "../../../components/carousel/GlideComponentThumbs";
+import { Colxx } from "../../../components/common/CustomBootstrap";
 import {
   MDBCarousel,
   MDBCarouselCaption,
@@ -161,7 +160,6 @@ export default class Home extends Component {
       hideArrows,
       dragging,
       hideSingleArrow,
-      itemsCount,
       selected,
       translate,
       transition,
@@ -173,14 +171,6 @@ export default class Home extends Component {
     } = this.state;
 
     const menu = this.menuItems;
-
-    const checkboxStyle = {
-      margin: "5px 10px"
-    };
-    const valueStyle = {
-      margin: "5px 10px",
-      display: "inline-block"
-    };
 
     return (
       <Fragment>
