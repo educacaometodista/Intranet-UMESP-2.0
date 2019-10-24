@@ -41,6 +41,12 @@ p.homeNewsTitle {
   cursor: pointer;
   border: none;
 }
+
+.menu-item:focus,
+.menu-item-wrapper:focus {
+  outline: 0;
+}
+
 .menu-item-wrapper.active {
   box-shadow: 2px 0px 20px black;
 }
