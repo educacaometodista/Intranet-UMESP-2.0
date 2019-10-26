@@ -54,6 +54,7 @@ export const Menu = (list, selected) =>
 const Arrow = ({ text, className }) => {
   return <div className={className}>{text}</div>;
 };
+
 Arrow.propTypes = {
   text: PropTypes.string,
   className: PropTypes.string
@@ -178,7 +179,7 @@ export default class Home extends Component {
                   <MDBMask overlay="black-light" />
                 </MDBView>
                 <MDBCarouselCaption>
-                  <h3 className="h3-responsive">Light mask</h3>
+                  <h3 className="h3-responsive">Seja bem-vindo(a) à nova Intranet da Educação Metodista!</h3>
                   <p>First text</p>
                 </MDBCarouselCaption>
               </MDBCarouselItem>
