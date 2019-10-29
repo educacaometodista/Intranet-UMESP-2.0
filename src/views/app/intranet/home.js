@@ -12,7 +12,7 @@ import {
 } from "mdbreact";
 // Hero Carousel: https://mdbootstrap.com/docs/react/advanced/carousel
 
-import MaterialIcon from 'material-icons-react';
+// import MaterialIcon from 'material-icons-react';
 
 import ScrollMenu from "react-horizontal-scrolling-menu";
 import PropTypes from "prop-types";
