@@ -227,7 +227,7 @@ export default class Home extends Component {
         </Row>
 
         <Row className="mt-2 text-left">
-          <Colxx xxs="12" className="mb-4">
+          <Colxx xxs="12">
             <HomeNews
               src={loremimg}
               title={
@@ -256,6 +256,16 @@ export default class Home extends Component {
           </Colxx>
         </Row>
 
+        <Row className="mt-4 text-center">
+          <Colxx xxs="12" className="mb-4">
+            <h1>Aniversariantes do Mês</h1>
+            <p className="text-muted">
+              Magni laborum quaerat assumenda, ipsa atque minus aliquam,
+              adipisci ab vel asperiores aspernatur at obcaecati facere
+              consequuntur voluptate quae saepe et soluta.
+            </p>
+          </Colxx>
+        </Row>
         <Row className="mt-2">
           <Colxx xxs="12">
             {showList && (
