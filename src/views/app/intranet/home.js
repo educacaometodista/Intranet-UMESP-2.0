@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Row } from "reactstrap";
-import { Colxx } from "../../../components/common/CustomBootstrap";
+import { Colxx, Separator } from "../../../components/common/CustomBootstrap";
 import {
   MDBCarousel,
   MDBCarouselCaption,
@@ -23,8 +23,7 @@ import "./home.css";
 
 ////////////////////////////////////// END OF IMPORTS //////////////////////////////////////
 
-const loremimg =
-  "http://placehold.it/600x415";
+const loremimg = "http://placehold.it/600x415";
 
 const list = [
   { name: "Leonardo", dia: 15, mes: 2 },
@@ -37,9 +36,7 @@ const list = [
 ];
 
 const MenuItem = ({ text, selected }) => {
-  return (
-    <div className={`menu-item ${selected ? "active" : ""}`}>{text}</div>
-  );
+  return <div className={`menu-item ${selected ? "active" : ""}`}>{text}</div>;
 };
 
 export const Menu = (list, selected) =>
@@ -47,7 +44,12 @@ export const Menu = (list, selected) =>
     const { name, dia, mes } = el;
     const onClick = () => console.log("original onClick ", name);
     return (
-      <MenuItem text={`${name} | ${dia}/${mes}`} key={name} selected={selected} onClick={onClick} />
+      <MenuItem
+        text={`${name} | ${dia}/${mes}`}
+        key={name}
+        selected={selected}
+        onClick={onClick}
+      />
     );
   });
 
@@ -179,7 +181,9 @@ export default class Home extends Component {
                   <MDBMask overlay="black-light" />
                 </MDBView>
                 <MDBCarouselCaption>
-                  <h3 className="h3-responsive">Seja bem-vindo(a) à nova Intranet da Educação Metodista!</h3>
+                  <h3 className="h3-responsive">
+                    Seja bem-vindo(a) à nova Intranet da Educação Metodista!
+                  </h3>
                   <p>First text</p>
                 </MDBCarouselCaption>
               </MDBCarouselItem>
@@ -253,8 +257,13 @@ export default class Home extends Component {
             <HomeNews src={loremimg} title={"Lorem ipsum dolor sit amet"} />
             <HomeNews src={loremimg} title={"Lorem ipsum dolor sit amet"} />
             <HomeNews src={loremimg} title={"Lorem ipsum dolor sit amet"} />
+            <Row style={{justifyContent: 'flex-end', paddingRight: '5%'}}>
+              Ler todas as notícias
+            </Row>
           </Colxx>
         </Row>
+
+        <Separator />
 
         <Row className="mt-4 text-center">
           <Colxx xxs="12" className="mb-4">
