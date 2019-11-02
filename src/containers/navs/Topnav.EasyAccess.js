@@ -14,11 +14,11 @@ const TopnavEasyAccess = () => {
           right
           id="iconMenuDropdown"
         >
-          <a href="http://www.metodista.br/webmetodista/index.html" target="_blank" className="icon-menu-item">
+          <a href="http://www.metodista.br/webmetodista/index.html" rel="noopener noreferrer" target="_blank" className="icon-menu-item">
             <i className="iconsminds-optimization d-block" />{" "}
             RH Rápido
           </a>
-          <a href="http://webmail.metodista.br" target="_blank" className="icon-menu-item">
+          <a href="http://webmail.metodista.br" rel="noopener noreferrer" target="_blank" className="icon-menu-item">
             <i className="iconsminds-mail-settings d-block" />{" "}
             Webmail
           </a>
