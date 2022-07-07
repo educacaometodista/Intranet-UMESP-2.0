@@ -13,7 +13,7 @@
     "formik": "^1.5.1",
     "material-icons-react": "^1.0.4",
     "mdbreact": "^4.20.0",
-    "moment": "2.22.2",
+    "moment": "2.29.4",
     "mousetrap": "^1.6.3",
     "rc-slider": "^8.6.1",
     "rc-switch": "^1.6.0",
